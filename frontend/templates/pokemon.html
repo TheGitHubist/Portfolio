@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pokemon on Linux console - My Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <div class="header-left">
+                <img src="../styles/images/professionalPhoto.jpg" alt="Killian Guillemot" class="profile-pic">
+                <h1>Portfolio</h1>
+                <button id="lang-toggle">EN</button>
+            </div>
+            <div class="header-right">
+                <a href="index.html" class="btn">Home</a>
+                <a href="projects.html" class="btn">Projects</a>
+                <a href="contact.html" class="btn">Contacts</a>
+            </div>
+        </header>
+        <main>
+            <h2>Pokemon on Linux console</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </main>
+        <footer>
+            <p>&copy; 2024 My Portfolio</p>
+        </footer>
+        <script>
+            const langToggle = document.getElementById('lang-toggle');
+            let isEnglish = true;
+
+            function setLanguage() {
+                document.querySelectorAll('[data-en]').forEach(el => {
+                    el.textContent = isEnglish ? el.getAttribute('data-en') : el.getAttribute('data-fr');
+                });
+            }
+
+            // Initialize language on page load
+            setLanguage();
+
+            langToggle.addEventListener('click', () => {
+                isEnglish = !isEnglish;
+                langToggle.textContent = isEnglish ? 'EN' : 'FR';
+                langToggle.classList.toggle('active', isEnglish);
+
+                // Toggle text content based on language
+                setLanguage();
+            });
+        </script>
+    </body>
+</html>

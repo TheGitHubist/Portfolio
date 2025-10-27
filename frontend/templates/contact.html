@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Me - My Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <div class="header-left">
+                <img src="../styles/images/professionalPhoto.jpg" alt="Killian Guillemot" class="profile-pic">
+                <h1>Portfolio</h1>
+                <button id="lang-toggle">EN</button>
+            </div>
+            <div class="header-right">
+                <a href="index.html" class="btn">Home</a>
+                <a href="projects.html" class="btn">Projects</a>
+                <a href="contact.html" class="btn">Contacts</a>
+            </div>
+        </header>
+        <main>
+            <h2 data-fr="Me Contacter" data-en="Contact Me">Contact Me</h2>
+            <p data-fr="Contactez-moi ! Je suis toujours ouvert pour discuter de nouvelles opportunités, collaborations, ou simplement discuter de tech." data-en="Get in touch! I'm always open to discussing new opportunities, collaborations, or just chatting about tech.">Get in touch! I'm always open to discussing new opportunities, collaborations, or just chatting about tech.</p>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <strong data-fr="Email:" data-en="Email:">Email:</strong> <a href="mailto:killian.guillemot@ecoles-epsi.net">killian.guillemot@ecoles-epsi.net</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <strong data-fr="Téléphone:" data-en="Phone:">Phone:</strong> <a href="tel:+337XXXXXXX">+33 7 XX XX XX XX</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <strong data-fr="LinkedIn:" data-en="LinkedIn:">LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-github"></i>
+                <strong data-fr="GitHub:" data-en="GitHub:">GitHub:</strong> <a href="https://github.com/TheGitHubist" target="_blank">github.com/TheGitHubist</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-twitter"></i>
+                <strong data-fr="Twitter:" data-en="Twitter:">Twitter:</strong> <a href="https://twitter.com/yourusername" target="_blank">@yourusername</a>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 My Portfolio</p>
+        </footer>
+        <script>
+            const langToggle = document.getElementById('lang-toggle');
+            let isEnglish = true;
+
+            function setLanguage() {
+                document.querySelectorAll('[data-en]').forEach(el => {
+                    el.textContent = isEnglish ? el.getAttribute('data-en') : el.getAttribute('data-fr');
+                });
+            }
+
+            // Initialize language on page load
+            setLanguage();
+
+            langToggle.addEventListener('click', () => {
+                isEnglish = !isEnglish;
+                langToggle.textContent = isEnglish ? 'EN' : 'FR';
+                langToggle.classList.toggle('active', isEnglish);
+
+                // Toggle text content based on language
+                setLanguage();
+            });
+        </script>
+    </body>
+</html>
