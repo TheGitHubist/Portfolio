@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pokemon on Linux console - My Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <div class="header-left">
+                <img src="../../styles/images/professionalPhoto.jpg" alt="Killian Guillemot" class="profile-pic">
+                <h1>Portfolio</h1>
+                <button id="lang-toggle">EN</button>
+            </div>
+            <div class="header-right">
+                <a href="../../index.html" class="btn">Home</a>
+                <a href="../projects.html" class="btn">Projects</a>
+                <a href="../contact.html" class="btn">Contacts</a>
+            </div>
+        </header>
+        <main>
+            <h2 data-en="Pokemon on Linux Console" data-fr="Pokemon sur Console Linux">Pokemon on Linux Console</h2>
+
+            <section>
+                <h3 data-en="Project Overview" data-fr="Aperçu du Projet">Project Overview</h3>
+                <p data-en="Pokemon on Linux Console is a multiplayer game project implemented in Python, featuring a client-server architecture. It recreates the classic Pokemon experience in a text-based console environment, allowing multiple players to connect and interact within a shared game world over a local area network (LAN)." data-fr="Pokemon sur Console Linux est un projet de jeu multijoueur implémenté en Python, avec une architecture client-serveur. Il recrée l'expérience classique de Pokemon dans un environnement console textuel, permettant à plusieurs joueurs de se connecter et d'interagir dans un monde de jeu partagé sur un réseau local (LAN).">
+                Pokemon on Linux Console is a multiplayer game project implemented in Python, featuring a client-server architecture. It recreates the classic Pokemon experience in a text-based console environment, allowing multiple players to connect and interact within a shared game world over a local area network (LAN).
+                </p>
+            </section>
+
+            <section>
+                <h3 data-en="How It Works" data-fr="Comment Ça Marche">How It Works</h3>
+                <p data-en="The system consists of three main Python files: client.py, server.py, and database.py. First, the database is initialized using database.py. Then, the server is launched. On separate machines within the same LAN, clients run client.py. Upon connection, users must login or register, with credentials verified or added by the server. Once authenticated, the server broadcasts menus to all connected clients and handles game options such as 'explore', 'go to pokecenter', 'go to the arena', and more, managing the shared game state." data-fr="Le système se compose de trois fichiers Python principaux : client.py, server.py et database.py. Tout d'abord, la base de données est initialisée à l'aide de database.py. Ensuite, le serveur est lancé. Sur des machines séparées dans le même LAN, les clients exécutent client.py. Lors de la connexion, les utilisateurs doivent se connecter ou s'inscrire, les informations d'identification étant vérifiées ou ajoutées par le serveur. Une fois authentifiés, le serveur diffuse les menus à tous les clients connectés et gère les options de jeu telles que 'explorer', 'aller au pokecenter', 'aller à l'arène', et plus encore, gérant l'état de jeu partagé.">
+                The system consists of three main Python files: client.py, server.py, and database.py. First, the database is initialized using database.py. Then, the server is launched. On separate machines within the same LAN, clients run client.py. Upon connection, users must login or register, with credentials verified or added by the server. Once authenticated, the server broadcasts menus to all connected clients and handles game options such as 'explore', 'go to pokecenter', 'go to the arena', and more, managing the shared game state.
+                </p>
+            </section>
+
+            <section>
+                <h3 data-en="Key Features" data-fr="Fonctionnalités Clés">Key Features</h3>
+                <ul>
+                    <li data-en="Multiplayer LAN Gaming: Connect multiple players on the same network for collaborative gameplay" data-fr="Jeu Multijoueur LAN: Connectez plusieurs joueurs sur le même réseau pour un jeu collaboratif">Multiplayer LAN Gaming: Connect multiple players on the same network for collaborative gameplay</li>
+                    <li data-en="User Authentication: Secure login and registration system handled server-side" data-fr="Authentification Utilisateur: Système sécurisé de connexion et d'inscription géré côté serveur">User Authentication: Secure login and registration system handled server-side</li>
+                    <li data-en="Real-time Menu Broadcasting: Server synchronizes game menus and options across all clients" data-fr="Diffusion de Menu en Temps Réel: Le serveur synchronise les menus et options de jeu sur tous les clients">Real-time Menu Broadcasting: Server synchronizes game menus and options across all clients</li>
+                    <li data-en="Console-Based Interface: Text-based gameplay reminiscent of classic console games" data-fr="Interface Basée sur Console: Jeu textuel rappelant les jeux de console classiques">Console-Based Interface: Text-based gameplay reminiscent of classic console games</li>
+                    <li data-en="Modular Architecture: Separate client, server, and database components for easy maintenance" data-fr="Architecture Modulaire: Composants client, serveur et base de données séparés pour une maintenance facile">Modular Architecture: Separate client, server, and database components for easy maintenance</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3 data-en="Context and Use Cases" data-fr="Contexte et Cas d'Usage">Context and Use Cases</h3>
+                <p data-en="This project demonstrates networking concepts, database management, and multiplayer game development in Python. It's ideal for learning about client-server architectures, LAN communication, and building interactive console applications. Suitable for educational purposes, game development workshops, or as a foundation for more complex multiplayer systems." data-fr="Ce projet démontre les concepts de réseau, de gestion de base de données et de développement de jeux multijoueurs en Python. Il est idéal pour apprendre les architectures client-serveur, la communication LAN et la construction d'applications console interactives. Convient aux fins éducatives, aux ateliers de développement de jeux ou comme base pour des systèmes multijoueurs plus complexes.">
+                This project demonstrates networking concepts, database management, and multiplayer game development in Python. It's ideal for learning about client-server architectures, LAN communication, and building interactive console applications. Suitable for educational purposes, game development workshops, or as a foundation for more complex multiplayer systems.
+                </p>
+            </section>
+
+            <section>
+                <h3 data-en="Screenshots and Demonstrations" data-fr="Captures d'Écran et Démonstrations">Screenshots and Demonstrations</h3>
+                <div class="image-gallery">
+                    <img src="../../styles/images/pokemon-client-console.jpg" alt="Client Console Interface" data-en="Client Console Interface" data-fr="Interface Console Client">
+                    <img src="../../styles/images/pokemon-server-setup.jpg" alt="Server Setup and Logs" data-en="Server Setup and Logs" data-fr="Configuration et Journaux du Serveur">
+                    <img src="../../styles/images/pokemon-login-screen.jpg" alt="Login and Registration Screen" data-en="Login and Registration Screen" data-fr="Écran de Connexion et d'Inscription">
+                    <img src="../../styles/images/pokemon-game-menu.jpg" alt="In-Game Menu Options" data-en="In-Game Menu Options" data-fr="Options du Menu en Jeu">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 My Portfolio</p>
+        </footer>
+        <script>
+            const langToggle = document.getElementById('lang-toggle');
+            let isEnglish = true;
+
+            function setLanguage() {
+                document.querySelectorAll('[data-en]').forEach(el => {
+                    el.textContent = isEnglish ? el.getAttribute('data-en') : el.getAttribute('data-fr');
+                });
+            }
+
+            // Initialize language on page load
+            setLanguage();
+
+            langToggle.addEventListener('click', () => {
+                isEnglish = !isEnglish;
+                langToggle.textContent = isEnglish ? 'EN' : 'FR';
+                langToggle.classList.toggle('active', isEnglish);
+
+                // Toggle text content based on language
+                setLanguage();
+            });
+        </script>
+    </body>
+</html>

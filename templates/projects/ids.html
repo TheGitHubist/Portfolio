@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IDS prototype for Linux - My Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <div class="header-left">
+                <img src="../../styles/images/professionalPhoto.jpg" alt="Killian Guillemot" class="profile-pic">
+                <h1>Portfolio</h1>
+                <button id="lang-toggle">EN</button>
+            </div>
+            <div class="header-right">
+                <a href="../../index.html" class="btn">Home</a>
+                <a href="../projects.html" class="btn">Projects</a>
+                <a href="../contact.html" class="btn">Contacts</a>
+            </div>
+        </header>
+        <main>
+            <h2 data-en="IDS Prototype for Linux" data-fr="Prototype IDS pour Linux">IDS Prototype for Linux</h2>
+
+            <section>
+                <h3 data-en="Project Overview" data-fr="Aperçu du Projet">Project Overview</h3>
+                <p data-en="The IDS (Intrusion Detection System) Prototype is a Python-based solution designed for file integrity monitoring on Linux systems. It automates the process of tracking changes to critical files, ensuring system security and compliance by detecting unauthorized modifications." data-fr="Le Prototype IDS (Système de Détection d'Intrusion) est une solution basée sur Python conçue pour la surveillance de l'intégrité des fichiers sur les systèmes Linux. Il automatise le processus de suivi des changements apportés aux fichiers critiques, assurant la sécurité du système et la conformité en détectant les modifications non autorisées.">
+                The IDS (Intrusion Detection System) Prototype is a Python-based solution designed for file integrity monitoring on Linux systems. It automates the process of tracking changes to critical files, ensuring system security and compliance by detecting unauthorized modifications.
+                </p>
+            </section>
+
+            <section>
+                <h3 data-en="How It Works" data-fr="Comment Ça Marche">How It Works</h3>
+                <p data-en="The system builds a JSON file that lists all files written by an administrator in a designated text folder. It then periodically checks these listed files for any changes. If no changes are detected, it generates a standard log entry. If modifications are found, it triggers an alert with the exact datetime of the change. A Linux service is implemented to automate the initial build of the JSON file (if it doesn't exist) and perform continuous checks, allowing administrators to simply start the service for hands-free operation." data-fr="Le système construit un fichier JSON qui liste tous les fichiers écrits par un administrateur dans un dossier texte désigné. Il vérifie ensuite périodiquement ces fichiers listés pour tout changement. Si aucun changement n'est détecté, il génère une entrée de journal standard. Si des modifications sont trouvées, il déclenche une alerte avec la date et l'heure exactes du changement. Un service Linux est implémenté pour automatiser la construction initiale du fichier JSON (s'il n'existe pas) et effectuer des vérifications continues, permettant aux administrateurs de simplement démarrer le service pour un fonctionnement sans intervention manuelle.">
+                The system builds a JSON file that lists all files written by an administrator in a designated text folder. It then periodically checks these listed files for any changes. If no changes are detected, it generates a standard log entry. If modifications are found, it triggers an alert with the exact datetime of the change. A Linux service is implemented to automate the initial build of the JSON file (if it doesn't exist) and perform continuous checks, allowing administrators to simply start the service for hands-free operation.
+                </p>
+            </section>
+
+            <section>
+                <h3 data-en="Key Features" data-fr="Fonctionnalités Clés">Key Features</h3>
+                <ul>
+                    <li data-en="Automated JSON File Generation: Dynamically creates and maintains a list of monitored files" data-fr="Génération Automatisée de Fichier JSON: Crée et maintient dynamiquement une liste des fichiers surveillés">Automated JSON File Generation: Dynamically creates and maintains a list of monitored files</li>
+                    <li data-en="Real-time Change Detection: Monitors files for unauthorized modifications with precise timestamps" data-fr="Détection de Changements en Temps Réel: Surveille les fichiers pour les modifications non autorisées avec des horodatages précis">Real-time Change Detection: Monitors files for unauthorized modifications with precise timestamps</li>
+                    <li data-en="Comprehensive Logging: Generates detailed logs for normal operations and alerts for anomalies" data-fr="Journalisation Complète: Génère des journaux détaillés pour les opérations normales et des alertes pour les anomalies">Comprehensive Logging: Generates detailed logs for normal operations and alerts for anomalies</li>
+                    <li data-en="Linux Service Integration: Seamless automation through systemd service for continuous monitoring" data-fr="Intégration de Service Linux: Automatisation transparente via le service systemd pour une surveillance continue">Linux Service Integration: Seamless automation through systemd service for continuous monitoring</li>
+                    <li data-en="Administrator-Friendly: Simple service start for hands-off operation and maintenance" data-fr="Convivial pour les Administrateurs: Démarrage simple du service pour une opération et une maintenance sans intervention">Administrator-Friendly: Simple service start for hands-off operation and maintenance</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3 data-en="Context and Use Cases" data-fr="Contexte et Cas d'Usage">Context and Use Cases</h3>
+                <p data-en="Ideal for system administrators and security professionals managing Linux servers where file integrity is critical. Use cases include compliance monitoring, intrusion detection in production environments, and automated security auditing for sensitive directories." data-fr="Idéal pour les administrateurs système et les professionnels de la sécurité gérant des serveurs Linux où l'intégrité des fichiers est critique. Les cas d'usage incluent la surveillance de conformité, la détection d'intrusion dans les environnements de production et l'audit de sécurité automatisé pour les répertoires sensibles.">
+                Ideal for system administrators and security professionals managing Linux servers where file integrity is critical. Use cases include compliance monitoring, intrusion detection in production environments, and automated security auditing for sensitive directories.
+                </p>
+            </section>
+
+            <section>
+                <h3 data-en="Screenshots and Demonstrations" data-fr="Captures d'Écran et Démonstrations">Screenshots and Demonstrations</h3>
+                <div class="image-gallery">
+                    <img src="../../styles/images/ids-json-file.jpg" alt="JSON File Structure" data-en="JSON File Structure" data-fr="Structure du Fichier JSON">
+                    <img src="../../styles/images/ids-log-output.jpg" alt="Log Output Example" data-en="Log Output Example" data-fr="Exemple de Sortie de Journal">
+                    <img src="../../styles/images/ids-alert-notification.jpg" alt="Alert Notification" data-en="Alert Notification" data-fr="Notification d'Alerte">
+                    <img src="../../styles/images/ids-service-setup.jpg" alt="Linux Service Setup" data-en="Linux Service Setup" data-fr="Configuration du Service Linux">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 My Portfolio</p>
+        </footer>
+        <script>
+            const langToggle = document.getElementById('lang-toggle');
+            let isEnglish = true;
+
+            function setLanguage() {
+                document.querySelectorAll('[data-en]').forEach(el => {
+                    el.textContent = isEnglish ? el.getAttribute('data-en') : el.getAttribute('data-fr');
+                });
+            }
+
+            // Initialize language on page load
+            setLanguage();
+
+            langToggle.addEventListener('click', () => {
+                isEnglish = !isEnglish;
+                langToggle.textContent = isEnglish ? 'EN' : 'FR';
+                langToggle.classList.toggle('active', isEnglish);
+
+                // Toggle text content based on language
+                setLanguage();
+            });
+        </script>
+    </body>
+</html>
