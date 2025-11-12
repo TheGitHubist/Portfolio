@@ -1,19 +1,15 @@
-# TODO: Fix Navigation Links and Avengers Images
+# TODO List for Portfolio Updates
 
-## Navigation Fixes
-- [x] Update navigation links in index.html (already correct, but verify)
-- [x] Update navigation links in templates/projects.html
-- [x] Update navigation links in templates/contact.html
-- [x] Update navigation links in templates/presentation.html
-- [x] Update navigation links in templates/projects/avengers.html
-- [x] Update navigation links in templates/projects/masker.html
-- [x] Update navigation links in templates/projects/ids.html
-- [x] Update navigation links in templates/projects/pokemon.html
-- [x] Update navigation links in templates/projects/darkweb.html
+## 1. Restructure Project Pages
+- [x] Edit templates/projects/avengers.html: Reorganize into Context, Goal, Hard Skills, Technologies, Download Button, Photos
+- [x] Edit templates/projects/ids.html: Reorganize into Context, Goal, Hard Skills, Technologies, Link Button, Photos
+- [x] Edit templates/projects/darkweb.html: Reorganize into Context, Goal, Hard Skills, Technologies, Link Button, Photos
+- [x] Edit templates/projects/masker.html: Reorganize into Context, Goal, Hard Skills, Technologies, Link Button, Photos
+- [x] Edit templates/projects/pokemon.html: Reorganize into Context, Goal, Hard Skills, Technologies, Link Button, Photos
 
-## Image Gallery Styling
-- [x] Add CSS for .image-gallery in styles/styles.css (flex column, uniform image sizes)
+## 2. Update Presentation Page
+- [x] Edit templates/presentation.html: Modify skills-container to carousel behavior (add buttons, JS for fade-in/out, dynamic height)
 
-## Followup Steps
-- [x] Test navigation by opening pages in browser
-- [x] Verify images display vertically with similar sizes
+## 3. Followup Steps
+- [ ] Test pages in browser for carousel functionality and structure
+- [ ] Confirm or update download/link URLs if needed

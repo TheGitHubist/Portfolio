@@ -47,75 +47,140 @@
             </div>
             <div class="skills-grid">
                 <h2 data-fr="Compétences" data-en="Skills">Skills</h2>
-                <div class="skills-container">
-                    <div class="skill-category-card">
-                        <h3 data-fr="Développement Front-End" data-en="Front-End Development">Front-End Development</h3>
-                        <p data-fr="Compétences en développement front-end." data-en="Skills in front-end development.">
-                            <ul>
-                                <li><strong>HTML/Twig</strong></li>
-                                <li><strong>CSS vanilla</strong></li>
-                                <li><strong>JavaScript Node.js framework</strong></li>
-                                <li><strong>Figma</strong></li>
-                            </ul>
-                        </p>
+                <div class="skills-carousel">
+                    <button class="carousel-btn prev-btn" id="prev-skill"><</button>
+                    <div class="skills-container">
+                        <div class="skill-category-card active">
+                            <h3 data-fr="Développement Front-End" data-en="Front-End Development">Front-End Development</h3>
+                            <p data-fr="Compétences en développement front-end." data-en="Skills in front-end development.">
+                                <ul data-fr="
+                                    <li><strong>HTML/Twig</strong></li>
+                                    <li><strong>CSS vanilla</strong></li>
+                                    <li><strong>JavaScript Node.js framework</strong></li>
+                                    <li><strong>Figma</strong></li>
+                                " data-en="
+                                    <li><strong>HTML/Twig</strong></li>
+                                    <li><strong>CSS vanilla</strong></li>
+                                    <li><strong>JavaScript Node.js framework</strong></li>
+                                    <li><strong>Figma</strong></li>
+                                ">
+                                    <li><strong>HTML/Twig</strong></li>
+                                    <li><strong>CSS vanilla</strong></li>
+                                    <li><strong>JavaScript Node.js framework</strong></li>
+                                    <li><strong>Figma</strong></li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="skill-category-card">
+                            <h3 data-fr="Développement Back-End" data-en="Back-End Development">Back-End Development</h3>
+                            <p data-fr="Compétences en développement back-end." data-en="Skills in back-end development.">
+                                <ul data-fr="
+                                    <li><strong>Python</strong>: frameworks web (Flask, Quart), backends asynchrones</li>
+                                    <li><strong>PHP et framework Symfony</strong></li>
+                                    <li><strong>C# et .NET</strong></li>
+                                " data-en="
+                                    <li><strong>Python</strong>: web frameworks (Flask, Quart), asynchronous backends</li>
+                                    <li><strong>PHP and Symfony framework</strong></li>
+                                    <li><strong>C# and .NET</strong></li>
+                                ">
+                                    <li><strong>Python</strong>: web frameworks (Flask, Quart), asynchronous backends</li>
+                                    <li><strong>PHP and Symfony framework</strong></li>
+                                    <li><strong>C# and .NET</strong></li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="skill-category-card">
+                            <h3 data-fr="Administrateur" data-en="Administrator">Network system and administration</h3>
+                            <p data-fr="Compétences en administration système." data-en="Skills in system administration.">
+                                <ul data-fr="
+                                    <li><strong>Linux</strong>: administration système, scripting Bash, gestion des services systemd</li>
+                                    <li><strong>Machines virtuelles et VirtualBox</strong></li>
+                                    <li><strong>Docker</strong></li>
+                                    <li><strong>Réseau et sécurité</strong>: protocoles réseau, sockets, cryptographie RSA, systèmes de détection d'intrusion (IDS)</li>
+                                " data-en="
+                                    <li><strong>Linux</strong>: system administration, Bash scripting, systemd services management</li>
+                                    <li><strong>Virtual Machines and VirtualBox</strong></li>
+                                    <li><strong>Docker</strong></li>
+                                    <li><strong>Networking and security</strong>: network protocols, sockets, RSA cryptography, intrusion detection systems (IDS)</li>
+                                ">
+                                    <li><strong>Linux</strong>: system administration, Bash scripting, systemd services management</li>
+                                    <li><strong>Virtual Machines and VirtualBox</strong></li>
+                                    <li><strong>Docker</strong></li>
+                                    <li><strong>Networking and security</strong>: network protocols, sockets, RSA cryptography, intrusion detection systems (IDS)</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="skill-category-card">
+                            <h3 data-fr="Programmeur de Jeux" data-en="Game Programmer">Game Programmer</h3>
+                            <p data-fr="Compétences en programmation de jeux." data-en="Skills in game programming.">
+                                <ul data-fr="
+                                    <li><strong>Unity et scripting C#</strong></li>
+                                    <li><strong>Unreal Engine</strong></li>
+                                    <li><strong>Game Design</strong></li>
+                                    <li><strong>Blender et modélisation 3D</strong></li>
+                                    <li><strong>Level Design</strong></li>
+                                " data-en="
+                                    <li><strong>Unity and C# Scripting</strong></li>
+                                    <li><strong>Unreal Engine</strong></li>
+                                    <li><strong>Game Design</strong></li>
+                                    <li><strong>Blender and 3D modelisation</strong></li>
+                                    <li><strong>Level Design</strong></li>
+                                ">
+                                    <li><strong>Unity and C# Scripting</strong></li>
+                                    <li><strong>Unreal Engine</strong></li>
+                                    <li><strong>Game Design</strong></li>
+                                    <li><strong>Blender and 3D modelisation</strong></li>
+                                    <li><strong>Level Design</strong></li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="skill-category-card">
+                            <h3 data-fr="Données & IA" data-en="Data & AI">Data & AI</h3>
+                            <p data-fr="Compétences en données et intelligence artificielle." data-en="Skills in data and artificial intelligence.">
+                                <ul data-fr="
+                                    <li><strong>Python</strong>: bibliothèques de science des données (Pandas, NumPy), bibliothèques d'affichage de données (seaborn, matplotlib)</li>
+                                    <li><strong>Apprentissage automatique</strong></li>
+                                    <li><strong>Ingénierie de prompt</strong></li>
+                                " data-en="
+                                    <li><strong>Python</strong>: data science libraries (Pandas, NumPy), data display libraries (seaborn, matplotlib)</li>
+                                    <li><strong>Machine learning</strong></li>
+                                    <li><strong>Prompt Engineering</strong></li>
+                                ">
+                                    <li><strong>Python</strong>: data science libraries (Pandas, NumPy), data display libraries (seaborn, matplotlib)</li>
+                                    <li><strong>Machine learning</strong></li>
+                                    <li><strong>Prompt Engineering</strong></li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="skill-category-card">
+                            <h3 data-fr="Autre" data-en="Other">Other</h3>
+                            <p data-fr="Autres compétences." data-en="Other skills.">
+                                <ul data-fr="
+                                    <li><strong>Bases de données</strong>: MongoDB, SQLite</li>
+                                    <li><strong>Gestion de projet</strong>: organisation, planification et suivi de projet</li>
+                                    <li><strong>Gestion d'équipe</strong>: coordination et leadership dans des environnements collaboratifs</li>
+                                    <li><strong>C++</strong>: développement d'applications de bureau, création d'installateur NSIS</li>
+                                    <li><strong>Arduino et code C++ MQTT</strong></li>
+                                    <li><strong>Contrôle de version</strong>: GitHub, GitLab</li>
+                                " data-en="
+                                    <li><strong>Databases</strong>: MongoDB, SQLite</li>
+                                    <li><strong>Project Management</strong>: organization, planning, and project tracking</li>
+                                    <li><strong>Team Management</strong>: coordination and leadership in collaborative environments</li>
+                                    <li><strong>C++</strong>: desktop application development, NSIS installer creation</li>
+                                    <li><strong>Arduino and MQTT C++ code</strong></li>
+                                    <li><strong>Version control</strong>: GitHub, GitLab</li>
+                                ">
+                                    <li><strong>Databases</strong>: MongoDB, SQLite</li>
+                                    <li><strong>Project Management</strong>: organization, planning, and project tracking</li>
+                                    <li><strong>Team Management</strong>: coordination and leadership in collaborative environments</li>
+                                    <li><strong>C++</strong>: desktop application development, NSIS installer creation</li>
+                                    <li><strong>Arduino and MQTT C++ code</strong></li>
+                                    <li><strong>Version control</strong>: GitHub, GitLab</li>
+                                </ul>
+                            </p>
+                        </div>
                     </div>
-                    <div class="skill-category-card">
-                        <h3 data-fr="Développement Back-End" data-en="Back-End Development">Back-End Development</h3>
-                        <p data-fr="Compétences en développement back-end." data-en="Skills in back-end development.">
-                            <ul>
-                                <li><strong>Python</strong>: web frameworks (Flask, Quart), asynchronous backends</li>
-                                <li><strong>PHP and Symfony framework</strong></li>
-                                <li><strong>C# and .NET</strong></li>
-                            </ul>
-                        </p>
-                    </div>
-                    <div class="skill-category-card">
-                        <h3 data-fr="Administrateur" data-en="Administrator">Network system and administration</h3>
-                        <p data-fr="Compétences en administration système." data-en="Skills in system administration.">
-                            <ul>
-                                <li><strong>Linux</strong>: system administration, Bash scripting, systemd services management</li>
-                                <li><strong>Virtual Machines and VirtualBox</strong></li>
-                                <li><strong>Docker</strong></li>
-                                <li><strong>Networking and security</strong>: network protocols, sockets, RSA cryptography, intrusion detection systems (IDS)</li>
-
-                            </ul>
-                        </p>
-                    </div>
-                    <div class="skill-category-card">
-                        <h3 data-fr="Programmeur de Jeux" data-en="Game Programmer">Game Programmer</h3>
-                        <p data-fr="Compétences en programmation de jeux." data-en="Skills in game programming.">
-                            <ul>
-                                <li><strong>Unity and C# Scripting</strong></li>
-                                <li><strong>Unreal Engine</strong></li>
-                                <li><strong>Game Design</strong></li>
-                                <li><strong>Blender and 3D modelisation</strong></li>
-                                <li><strong>Level Design</strong></li>
-                            </ul>
-                        </p>
-                    </div>
-                    <div class="skill-category-card">
-                        <h3 data-fr="Données & IA" data-en="Data & AI">Data & AI</h3>
-                        <p data-fr="Compétences en données et intelligence artificielle." data-en="Skills in data and artificial intelligence.">
-                            <ul>
-                                <li><strong>Python</strong>: data science libraries (Pandas, NumPy), data display libraries (seaborn, matplotlib)</li>
-                                <li><strong>Machine learning</strong></li>
-                                <li><strong>Prompt Engineering</strong></li>
-                            </ul>
-                        </p>
-                    </div>
-                    <div class="skill-category-card">
-                        <h3 data-fr="Autre" data-en="Other">Other</h3>
-                        <p data-fr="Autres compétences." data-en="Other skills.">
-                            <ul>
-                                <li><strong>Databases</strong>: MongoDB, SQLite</li>
-                                <li><strong>Project Management</strong>: organization, planning, and project tracking</li>
-                                <li><strong>Team Management</strong>: coordination and leadership in collaborative environments</li>
-                                <li><strong>C++</strong>: desktop application development, NSIS installer creation</li>
-                                <li><strong>Arduino and MQTT C++ code</strong></li>
-                                <li><strong>Version control</strong>: GitHub, GitLab</li>
-                            </ul>
-                        </p>
-                    </div>
+                    <button class="carousel-btn next-btn" id="next-skill">></button>
                 </div>
             </div>
             <div class="interests-section">
@@ -192,6 +257,34 @@
                 setLanguage();
             });
 
+            // Skills Carousel Functionality
+            const skillsContainer = document.querySelector('.skills-container');
+            const skillCards = document.querySelectorAll('.skill-category-card');
+            const prevBtn = document.getElementById('prev-skill');
+            const nextBtn = document.getElementById('next-skill');
+            let currentIndex = 0;
+
+            function updateCarousel() {
+                skillCards.forEach((card, index) => {
+                    card.classList.toggle('active', index === currentIndex);
+                });
+                // Adjust container height dynamically
+                const activeCard = skillCards[currentIndex];
+                skillsContainer.style.height = activeCard.offsetHeight + 'px';
+            }
+
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + skillCards.length) % skillCards.length;
+                updateCarousel();
+            });
+
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % skillCards.length;
+                updateCarousel();
+            });
+
+            // Initialize carousel
+            updateCarousel();
 
         </script>
     </body>
