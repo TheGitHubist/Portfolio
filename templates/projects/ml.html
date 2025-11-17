@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Energy Consumption Prediction in Bordeaux - My Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <div class="header-left">
+                <img src="../../styles/images/professionalPhoto.jpg" alt="Killian Guillemot" class="profile-pic">
+                <h1>Portfolio</h1>
+                <button id="lang-toggle">EN</button>
+            </div>
+            <div class="header-right">
+                <a href="../../index.html" class="btn">Home</a>
+                <a href="../projects.html" class="btn">Projects</a>
+                <a href="../contact.html" class="btn">Contacts</a>
+            </div>
+        </header>
+        <main>
+            <h2 data-en="Energy Consumption Prediction in Bordeaux" data-fr="Prédiction de la Consommation Énergétique à Bordeaux">Energy Consumption Prediction in Bordeaux</h2>
+
+            <section>
+                <h3 data-en="Context" data-fr="Contexte">Context</h3>
+                <p data-en="This group project focuses on analyzing and predicting energy consumption patterns in Bordeaux using machine learning techniques. It addresses the growing need for sustainable energy management in urban areas, providing insights that can help optimize energy distribution and reduce waste. The project demonstrates practical applications of data science in environmental and urban planning contexts." data-fr="Ce projet de groupe se concentre sur l'analyse et la prédiction des modèles de consommation énergétique à Bordeaux en utilisant des techniques de machine learning. Il répond au besoin croissant de gestion énergétique durable dans les zones urbaines, fournissant des insights qui peuvent aider à optimiser la distribution énergétique et réduire les déchets. Le projet démontre des applications pratiques de la science des données dans les contextes environnementaux et d'urbanisme.">
+                This group project focuses on analyzing and predicting energy consumption patterns in Bordeaux using machine learning techniques. It addresses the growing need for sustainable energy management in urban areas, providing insights that can help optimize energy distribution and reduce waste. The project demonstrates practical applications of data science in environmental and urban planning contexts.
+                </p>
+            </section>
+
+            <section>
+                <h3 data-en="Goal of the project" data-fr="Objectif du Projet">Goal of the project</h3>
+                <p data-en="The Energy Consumption Prediction project is a comprehensive machine learning initiative aimed at forecasting energy usage in Bordeaux. By collecting and analyzing historical data, the project develops predictive models that can anticipate consumption patterns, enabling better resource allocation and sustainability planning for the city." data-fr="Le projet de prédiction de la consommation énergétique est une initiative complète de machine learning visant à prévoir l'utilisation énergétique à Bordeaux. En collectant et analysant des données historiques, le projet développe des modèles prédictifs qui peuvent anticiper les modèles de consommation, permettant une meilleure allocation des ressources et une planification de la durabilité pour la ville.">
+                The Energy Consumption Prediction project is a comprehensive machine learning initiative aimed at forecasting energy usage in Bordeaux. By collecting and analyzing historical data, the project develops predictive models that can anticipate consumption patterns, enabling better resource allocation and sustainability planning for the city.
+                </p>
+            </section>
+
+            <section>
+                <h3 data-en="Hard skills (what I did)" data-fr="Compétences Techniques (ce que j'ai fait)">Hard skills (what I did)</h3>
+                <ul>
+                    <li data-en="Gathered and processed energy consumption data from CSV files" data-fr="Recueilli et traité les données de consommation énergétique à partir de fichiers CSV">Gathered and processed energy consumption data from CSV files</li>
+                    <li data-en="Performed data cleaning and reliability checks using pandas and numpy" data-fr="Effectué le nettoyage des données et les vérifications de fiabilité en utilisant pandas et numpy">Performed data cleaning and reliability checks using pandas and numpy</li>
+                    <li data-en="Developed predictive machine learning models with scikit-learn" data-fr="Développé des modèles prédictifs de machine learning avec scikit-learn">Developed predictive machine learning models with scikit-learn</li>
+                    <li data-en="Created data visualizations and graphs using matplotlib and seaborn" data-fr="Créé des visualisations de données et des graphiques en utilisant matplotlib et seaborn">Created data visualizations and graphs using matplotlib and seaborn</li>
+                    <li data-en="Built a Flask web application to display predictions and insights" data-fr="Construit une application web Flask pour afficher les prédictions et les insights">Built a Flask web application to display predictions and insights</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3 data-en="Technologies (what I used)" data-fr="Technologies (ce que j'ai utilisé)">Technologies (what I used)</h3>
+                <ul>
+                    <li data-en="Python" data-fr="Python">Python</li>
+                    <li data-en="Pandas and NumPy for data processing" data-fr="Pandas et NumPy pour le traitement des données">Pandas and NumPy for data processing</li>
+                    <li data-en="Scikit-learn for machine learning models" data-fr="Scikit-learn pour les modèles de machine learning">Scikit-learn for machine learning models</li>
+                    <li data-en="Matplotlib and Seaborn for data visualization" data-fr="Matplotlib et Seaborn pour la visualisation des données">Matplotlib and Seaborn for data visualization</li>
+                    <li data-en="Flask for web application development" data-fr="Flask pour le développement d'applications web">Flask for web application development</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3 data-en="Link" data-fr="Lien">Link</h3>
+                <a href="#link" class="btn" data-en="View on GitHub" data-fr="Voir sur GitHub">View on GitHub</a>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 My Portfolio</p>
+        </footer>
+        <script>
+            const langToggle = document.getElementById('lang-toggle');
+            let isEnglish = true;
+
+            function setLanguage() {
+                document.querySelectorAll('[data-en]').forEach(el => {
+                    el.textContent = isEnglish ? el.getAttribute('data-en') : el.getAttribute('data-fr');
+                });
+            }
+
+            // Initialize language on page load
+            setLanguage();
+
+            langToggle.addEventListener('click', () => {
+                isEnglish = !isEnglish;
+                langToggle.textContent = isEnglish ? 'EN' : 'FR';
+                langToggle.classList.toggle('active', isEnglish);
+
+                // Toggle text content based on language
+                setLanguage();
+            });
+        </script>
+    </body>
+</html>
